@@ -1,3 +1,4 @@
 <?php
-	passthru("ls -la");
+	$doc = file_get_contents("index.php");
+	print($doc);
 ?>
